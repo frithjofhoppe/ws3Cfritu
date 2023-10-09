@@ -1,66 +1,76 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MADAM MONOROM | HTML CSS Sandbox </title>
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <h2><a href="index.html">MADAM MONOROM'S SANDBOX</a></h2>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page"  href="../contact/index.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </header>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="index.html">about</a></li>
-                <li><a href="../contact/index.html">contact</a></li>
-            </ul>
-        </div>
+      </div>
     </nav>
-    <div id="content">
-        <div class="container">
-            <h1>About me</h1>
-            <p><img src="../images/monorom-qr.gif" alt="Madam Monorm"></p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-            <hr>
-            <h2>Professionell</h2>
-            <ul>
+    <div class="container my-5">
+      <div class="col-lg-8 px-0">
+        <h1>About me</h1>
+        <p><img src="../images/monorom-qr.gif" alt="Madam Monorm"></p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+              <div class="h-100 p-5 text-bg-dark rounded-3">
+                <h2>Professionell</h2>
                 <li>agile coach at FHNW</li>
                 <li>Board Member etoy.SA</li>
                 <li>CSS Lover</li>
-
-            </ul>
-            <hr>
-            <h2>Privat</h2>
-            <ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                <h2>Privat</h2>
                 <li>Love Vegetable</li>
                 <li>Playing Fortnite</li>
                 <li>Fashion adicted</li>
-
-            </ul>
-            <hr>
-            <p>made with Love by <a href="http://monorom.com">MADAM MONOROM</a></p>
-        </div>
-        <!-- end container -->
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-    <!-- end content -->
-    <footer>
-        <div class="container">
-            <h3>mail me</h3>
-            <p><a href="mailto:no@spam.haha">company@haha.com</a></p>
-            <h3>want to know more?</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            <p><a href="#">facebook</a> * <a href="#">youtube</a> * <a href="#">instagram</a>
-            </p>
 
-        </div>
-    </footer>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; ws3C Fritu :-)</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="mailto:frithjof.hoppe@gmail.com" class="nav-link px-2 text-body-secondary">frithjof.hoppe@gmail.com</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Youtube</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Instagramm</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Facebook</a></li>
+        </ul>
+      </footer>
+  </body>
 </html>
